@@ -72,7 +72,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Indian Institute of Technology Bombay",
-      logo: require("./assets/images/iitbLogo.jpg"),
+      logo: require("./assets/images/iitbLogo.png"),
       subHeader: "Bachelor of Science (BS) in Chemistry",
       duration: "2023 – 2027",
       desc: "Coursework: Computer Programming, AI and Data Science, Data Analytics for Chemists, Organic & Physical Chemistry.",
@@ -131,7 +131,7 @@ const workExperiences = {
     {
       role: "Hostel Web & Tech Secretary",
       company: "Hostel 09, IIT Bombay",
-      companylogo: require("./assets/images/iitbLogo.jpg"),
+      companylogo: require("./assets/images/iitbLogo.png"),
       date: "Sep 2024 – Apr 2025",
       desc: "Managed digital infrastructure for 400+ residents, redesigned hostel website, and ensured LAN uptime."
     }
@@ -150,7 +150,7 @@ const bigProjects = {
   subtitle: "Selected Works in Web Development and Data Science",
   projects: [
     {
-      image: require("./assets/images/iitbLogo.jpg"),
+      image: require("./assets/images/iitbLogo.png"),
       projectName: "PHO Digitisation Portal",
       projectDesc:
         "Full-stack Django + React system digitizing hostel cleaning verification for 18 hostels at IIT Bombay with OAuth2 and live dashboards.",
@@ -162,7 +162,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/iitbLogo.jpg"),
+      image: require("./assets/images/iitbLogo.png"),
       projectName: "Married Research Scholars Portal (MRSP)",
       projectDesc:
         "Room allocation and verification portal managing 3+ apartment types and real-time waitlists with role-based approvals.",
@@ -223,7 +223,7 @@ const achievementSection = {
       title: "JEE Advanced (2023)",
       subtitle:
         "Ranked in the top 0.57 percentile nationwide among 0.18 million candidates.",
-      image: require("./assets/images/iitbLogo.jpg"),
+      image: require("./assets/images/iitbLogo.png"),
       imageAlt: "JEE Logo",
       footerLink: []
     },
