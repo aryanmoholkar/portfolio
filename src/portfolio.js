@@ -1,389 +1,288 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
+/* Personal Portfolio Configuration — Aryan Moholkar */
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
-
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
+const illustration = { animated: true };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Aryan Moholkar",
+  title: "Hello, I'm Aryan",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Developer 🚀 skilled in building scalable and data-driven web applications using Django, React, and PostgreSQL. I'm a third-year BS Chemistry student at IIT Bombay exploring applications of AI and data analytics in science and technology."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  displayGreeting: true
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/aryanmoholkar",
+  linkedin: "https://www.linkedin.com/in/aryan-moholkar/",
+  gmail: "moholkararyan@gmail.com",
+  instagram: "https://www.instagram.com/aryanmoholkar/",
+
+  display: true
 };
 
 // Skills Section
-
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle:
+    "FULL STACK WEB DEVELOPER | DATA ANALYST | MACHINE LEARNING ENTHUSIAST",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Build responsive, production-ready web apps using Django + React."),
+    emoji("⚡ Design APIs, dashboards, and automation pipelines for analytics."),
+    emoji("⚡ Apply statistical & ML methods for data-driven insights."),
+    emoji("⚡ Integrate authentication, CI/CD, and Dockerized deployments.")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "Django", fontAwesomeClassname: "fas fa-leaf" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "Tailwind CSS", fontAwesomeClassname: "fab fa-css3" },
+    { skillName: "Next.js", fontAwesomeClassname: "fas fa-layer-group" },
+    { skillName: "Pandas", fontAwesomeClassname: "fas fa-chart-line" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Indian Institute of Technology Bombay",
+      logo: require("./assets/images/iitbLogo.jpg"),
+      subHeader: "Bachelor of Science (BS) in Chemistry",
+      duration: "2023 – 2027",
+      desc: "Coursework: Computer Programming, AI and Data Science, Data Analytics for Chemists, Organic & Physical Chemistry.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Institute Web Nominee – led development of institute-level hostel portals.",
+        "Completed NLP & Computer Vision Bootcamps under Analytics Club, IIT Bombay."
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
+// Tech Stack Proficiency
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+    { Stack: "Frontend / UI", progressPercentage: "85%" },
+    { Stack: "Backend / APIs", progressPercentage: "80%" },
+    { Stack: "Data Science / ML", progressPercentage: "70%" }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
-// Work experience section
-
+// Work Experience Section
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Data Analyst Intern",
+      company: "KAN Initiatives LLC (Texas, USA)",
+      companylogo: require("./assets/images/kanLogo.png"),
+      date: "May 2025 – July 2025",
+      desc: "Built automated analytics workflows and business dashboards.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Cleaned & analyzed datasets using Python, pandas, and matplotlib.",
+        "Automated KPI reporting scripts and visualized insights with Chart.js."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Institute Web Nominee",
+      company: "Hostel Affairs Council, IIT Bombay",
+      companylogo: require("./assets/images/haLogo.jpg"),
+      date: "June 2025 – Present",
+      desc: "Digitizing hostel operations across 18 hostels under Hostel Affairs Council.",
+      descBullets: [
+        "Developed PHO Digitisation Portal and MRSP Portal using Django + React.",
+        "Managed and improved institute hostel web platforms."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Department Academic Mentor (DAMP)",
+      company: "Chemistry Department, IIT Bombay",
+      companylogo: require("./assets/images/smpLogo.jpeg"),
+      date: "June 2025 – Present",
+      desc: "Mentoring sophomores in academics, career planning, and campus life."
+    },
+    {
+      role: "Hostel Web & Tech Secretary",
+      company: "Hostel 09, IIT Bombay",
+      companylogo: require("./assets/images/iitbLogo.jpg"),
+      date: "Sep 2024 – Apr 2025",
+      desc: "Managed digital infrastructure for 400+ residents, redesigned hostel website, and ensured LAN uptime."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+// Open Source Section
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
-// Some big projects you have worked on
-
+// Big Projects Section
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Selected Works in Web Development and Data Science",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/iitbLogo.jpg"),
+      projectName: "PHO Digitisation Portal",
+      projectDesc:
+        "Full-stack Django + React system digitizing hostel cleaning verification for 18 hostels at IIT Bombay with OAuth2 and live dashboards.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/aryanmoholkar/PHO-Digitisation"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/iitbLogo.jpg"),
+      projectName: "Married Research Scholars Portal (MRSP)",
+      projectDesc:
+        "Room allocation and verification portal managing 3+ apartment types and real-time waitlists with role-based approvals.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/aryanmoholkar/Married-Research-Scholars-Portal"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/crudLogo.png"),
+      projectName: "Full-Stack CRUD Dashboard",
+      projectDesc:
+        "Production-ready CRUD app with Dockerized Django backend, React frontend, and MySQL integration.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/aryanmoholkar/CRUD-Dashboard"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/sentimentLogo.jpg"),
+      projectName: "Stock Market Sentiment Analysis",
+      projectDesc:
+        "NLP pipeline using NLTK and TextBlob to quantify market sentiment from financial news and correlate with price movements.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/aryanmoholkar/sentiment-analysis"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/bitcoinLogo.jpg"),
+      projectName: "Bitcoin Volatility Forecasting",
+      projectDesc:
+        "Forecasted cryptocurrency volatility using GARCH and EWMA models; evaluated predictive accuracy via MSE and QLIKE metrics.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/aryanmoholkar/bitcoin-volatality-forecasting"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// Achievements Section
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements & Certifications 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+    "Highlights of academic excellence, certifications, and extracurricular achievements.",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "JEE Advanced (2023)",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+        "Ranked in the top 0.57 percentile nationwide among 0.18 million candidates.",
+      image: require("./assets/images/iitbLogo.jpg"),
+      imageAlt: "JEE Logo",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
+      title: "Data Analytics Virtual Internship — Deloitte Australia",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+        "Completed simulation on real-world analytics and visualization tasks.",
+      image: require("./assets/images/deloitteLogo.jpg"),
+      imageAlt: "Deloitte Logo",
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "Career Essentials in Data Analysis — Microsoft + LinkedIn",
+      subtitle:
+        "Earned certification demonstrating foundational analytics and Excel proficiency.",
+      image: require("./assets/images/microsoftLogo.png"),
+      imageAlt: "Microsoft Logo",
+      footerLink: []
+    },
+    {
+      title: "Black Belt in Karate",
+      subtitle:
+        "Recognized for discipline, consistency, and physical fitness through martial arts.",
+      image: require("./assets/images/karateLogo.jpg"),
+      imageAlt: "Karate Belt Logo",
+      footerLink : [] 
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Blogs Section
-
+// Blog Section
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "Occasional thoughts on data, development, and learning.",
+  displayMediumBlogs: "false",
+  blogs: [],
+  display: false
 };
 
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
+// Talks / Podcast
+const talkSection = { title: "Talks", subtitle: "", display: false };
+const podcastSection = { title: "", subtitle: "", display: false };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "Download my latest resume below.",
+  display: true
 };
 
+// Contact Section
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "Interested in collaborating or hiring? Let’s connect!",
+  number: "+91-72619-85000",
+  email_address: "moholkararyan@gmail.com"
 };
 
 // Twitter Section
+const twitterDetails = { userName: "aryan_moholkar", display: false };
 
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
   illustration,
