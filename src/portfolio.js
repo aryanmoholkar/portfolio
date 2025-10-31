@@ -11,7 +11,7 @@ const splashScreen = {
 };
 
 // Summary And Greeting Section
-const illustration = { animated: true };
+const illustration = {animated: true};
 
 const greeting = {
   username: "Aryan Moholkar",
@@ -40,24 +40,28 @@ const skillsSection = {
   subTitle:
     "FULL STACK WEB DEVELOPER | DATA ANALYST | MACHINE LEARNING ENTHUSIAST",
   skills: [
-    emoji("⚡ Build responsive, production-ready web apps using Django + React."),
-    emoji("⚡ Design APIs, dashboards, and automation pipelines for analytics."),
+    emoji(
+      "⚡ Build responsive, production-ready web apps using Django + React."
+    ),
+    emoji(
+      "⚡ Design APIs, dashboards, and automation pipelines for analytics."
+    ),
     emoji("⚡ Apply statistical & ML methods for data-driven insights."),
     emoji("⚡ Integrate authentication, CI/CD, and Dockerized deployments.")
   ],
   softwareSkills: [
-    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
-    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
-    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
-    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "Django", fontAwesomeClassname: "fas fa-leaf" },
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
-    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
-    { skillName: "Tailwind CSS", fontAwesomeClassname: "fab fa-css3" },
-    { skillName: "Next.js", fontAwesomeClassname: "fas fa-layer-group" },
-    { skillName: "Pandas", fontAwesomeClassname: "fas fa-chart-line" }
+    {skillName: "HTML5", fontAwesomeClassname: "fab fa-html5"},
+    {skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt"},
+    {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "React", fontAwesomeClassname: "fab fa-react"},
+    {skillName: "Django", fontAwesomeClassname: "fas fa-leaf"},
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "Docker", fontAwesomeClassname: "fab fa-docker"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"},
+    {skillName: "Tailwind CSS", fontAwesomeClassname: "fab fa-css3"},
+    {skillName: "Next.js", fontAwesomeClassname: "fas fa-layer-group"},
+    {skillName: "Pandas", fontAwesomeClassname: "fas fa-chart-line"}
   ],
   display: true
 };
@@ -84,9 +88,9 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    { Stack: "Frontend / UI", progressPercentage: "85%" },
-    { Stack: "Backend / APIs", progressPercentage: "80%" },
-    { Stack: "Data Science / ML", progressPercentage: "70%" }
+    {Stack: "Frontend / UI", progressPercentage: "85%"},
+    {Stack: "Backend / APIs", progressPercentage: "80%"},
+    {Stack: "Data Science / ML", progressPercentage: "70%"}
   ],
   displayCodersrank: false
 };
@@ -245,7 +249,7 @@ const achievementSection = {
         "Recognized for discipline, consistency, and physical fitness through martial arts.",
       image: require("./assets/images/karateLogo.jpg"),
       imageAlt: "Karate Belt Logo",
-      footerLink : [] 
+      footerLink: []
     }
   ],
   display: true
@@ -261,8 +265,8 @@ const blogSection = {
 };
 
 // Talks / Podcast
-const talkSection = { title: "Talks", subtitle: "", display: false };
-const podcastSection = { title: "", subtitle: "", display: false };
+const talkSection = {title: "Talks", subtitle: "", display: false};
+const podcastSection = {title: "", subtitle: "", display: false};
 
 // Resume Section
 const resumeSection = {
@@ -280,7 +284,7 @@ const contactInfo = {
 };
 
 // Twitter Section
-const twitterDetails = { userName: "aryan_moholkar", display: false };
+const twitterDetails = {userName: "aryan_moholkar", display: false};
 
 const isHireable = true;
 
